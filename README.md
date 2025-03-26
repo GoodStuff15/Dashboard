@@ -3,11 +3,12 @@
 Gustav Eriksson Söderlund
 SUT24 - Webbutveckling Frontend
 Individuellt Projekt
+2025-03-26
 
---- Info ---
+--- Info ---<br>
 HTML, CSS, Javascript
 
---- Kodresonemang ---
+--- Kodresonemang ---<br><br>
 
 
 I det stora hela tycker jag att koden fungerar väl. Allt innehåll fungerar enligt specifikation. 

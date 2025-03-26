@@ -1,1 +1,0 @@
-const authorization = "Client-ID 3qHiHGAeNHR-B23gKSJF3gfMNoLcUG1oNG0g1NXTJig";

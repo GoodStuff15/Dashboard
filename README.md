@@ -1,12 +1,12 @@
 
 --- DASHBOARD ---<br>
-Gustav Eriksson Söderlund
-SUT24 - Webbutveckling Frontend
-Individuellt Projekt
-2025-03-26
+Gustav Eriksson Söderlund<br>
+SUT24 - Webbutveckling Frontend<br>
+Individuellt Projekt<br>
+2025-03-26<br><br>
 
 --- Info ---<br>
-HTML, CSS, Javascript
+HTML, CSS, Javascript<br><br>
 
 --- Kodresonemang ---<br><br>
 

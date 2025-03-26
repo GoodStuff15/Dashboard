@@ -1,0 +1,434 @@
+/* Imports */
+
+
+/* General */
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover { 
+    text-decoration: underline;
+}
+
+header {
+    padding-top: 10px;
+    height: 23vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+main {
+    height: 54vh;
+    width: 100vw;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    position: relative;
+}
+
+footer {
+    height: 23vh;
+    width: 100vw;
+    position: relative;
+    padding-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+article {  /* reserved for modules */
+    width: 20%;
+    height: 80%;
+
+    background-color: #E2E2E2;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px; 
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+textarea {
+    
+    height: 80%;
+    width: 90%;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Classes */
+
+.bold {
+    font-weight: bolder;
+}
+
+
+
+    /* Links */
+.link {
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+}
+
+.linkdiv {
+width: 90%;
+height: 10%;
+position: relative; 
+margin-top: 5px;
+padding: 10px;
+
+border-radius: 10px;
+text-align: center;
+background-color: white;
+
+display: flex;  
+flex-direction: row;
+align-items: center;
+
+    a {
+        font-size: 2vh;
+    }
+z-index: 1;
+}
+
+.linkdiv:hover {
+    box-shadow: 1px 1px 1px;
+
+}
+
+.favicon {
+    position: relative;
+    top: 2px;
+    width: auto;
+    height: 50%;
+    margin-right: 5px;
+}
+
+
+
+.close {
+    box-sizing: content-box;
+    background: transparent;
+    color: darkgray;    
+    border: 1px solid darkgray; 
+    border-radius: 50%;
+    font-size: 8px;
+    padding: 0px 2px;
+    width: 5px;
+    height: 10px;
+    position: absolute; 
+    top: 2px;
+    right: 2px;
+    z-index: 2;
+
+    
+}
+
+.close:hover {
+    color: red;
+    border-color: red;
+    transform: scale(1.5);
+}
+
+    /* Weather */
+.weatherDiv
+{
+    display: grid; 
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 30% 70%;
+    background-color: white;
+    border-radius: 8px;
+    padding: 5px;
+    margin-top: 10px;
+    height: 15%;
+    width: 91%;
+    align-items: start;
+
+}
+.temp-desc {
+    grid-row: 2;
+    grid-column: 2;
+    display: flex;
+    flex-direction: row;
+}
+.temp {
+    margin: 5px 0px 5px 0px;
+    font-size: 10px;
+    text-align:center;
+    background-color: lightgray;
+    padding: 3px;
+    width: fit-content;
+    height: 50%;
+    border-radius: 5px;
+    font-size: 80%;
+}
+
+.w-desc {
+    margin: 5px 0px 5px 5px;
+    font-size: 80%;
+    background-color: lightgray;
+    padding: 3px;
+
+    width: fit-content;
+    height: 50%;
+    border-radius: 5px;
+}
+
+
+.weathersymbol {
+
+    width: auto;
+    height: 100%;
+    grid-row: 1 / span 2;
+    
+}
+
+.weekday {
+    grid-row: 1;
+    font-size: 12px;
+    font-weight: bold;
+    font-weight: 900;
+    margin-bottom: 2px;
+}
+
+
+    /* PokeAPI */
+.type {
+    
+    color: white;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 3px;
+}
+
+.pokename::first-letter {
+    text-transform: uppercase;
+}
+
+.poketypes {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    p{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+    /* Change background */
+.change-bg {
+    position: relative;
+    top: 11vh;    
+    background-color: #C7C7C7;
+    border-radius: 20px;
+    color: white;
+    padding: 5px 20px;
+    
+    img{
+        height: 14px;
+        width: 14px;
+        margin-right: 10px;
+    }
+}
+
+.change-bg:hover {
+    border: 1px solid black;
+    text-shadow: 1px 1px 1px black;
+}
+
+    /* new link popup */
+.new-link-input[type=text], .new-link-input[type=url] {
+    padding: 10px;
+    border: 1px solid black;    
+}
+
+#url
+{
+    margin-left: 2px;
+    width: 50%;
+    border: 1px solid black; 
+    padding: 5px; 
+    border-radius: 5px;
+}
+
+#title
+{
+    margin-left: 4px;
+    width: 50%;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.btn {
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    box-shadow: 2px 2px 2px;
+}
+
+.btn:active {
+    box-shadow: 1px 0px 1px;
+    border: 2px inset gray;
+}
+
+
+
+
+/* Unique ID's - grouped by parent if possible */
+
+#time-date {
+    background-color: #E2E2E2;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    justify-content: space-evenly;
+    padding: 5px 10px;
+    width: 21vh;
+    position: relative;
+    top: 5vh;
+
+    p {
+        padding: 2px;
+    }
+    
+}
+
+#headline {
+    font-size: 50px;
+    text-align:center;
+    background: white;
+    font-weight: bolder;
+    border-radius: 20px;
+    
+}
+
+#weatherDisplay {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 10px;
+     background-color: white;
+     width: 90%;
+     height: auto;
+     border-radius: 15px;
+     padding: 5px;
+}
+
+#add {
+    width: 12px;
+    height: 12px;
+}
+
+#addlink {
+    width: 50%;
+    height: auto; 
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    position: absolute;
+    top: 85%;
+    background-color: #B6B6B6;
+    justify-content:space-evenly;
+    align-items: center;
+    
+    color: white;
+
+}
+
+#addlink:hover {
+    border: 1px solid black;
+    text-shadow: 1px 1px 1px black;
+}
+
+#modules {
+    height: 42vh; 
+    width: 87.5vw;
+
+    box-sizing: border-box;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#weather-module {
+    
+}
+
+#link-module {
+    position: relative;
+
+}
+
+#new-link-popup {
+    width: 50%;
+    display: none;
+    position: fixed;
+    z-index: 9;
+    border: 3px solid black; 
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    min-height: 100px;
+    box-shadow: 2px 2px 4px gray;
+}
+
+#new-link-container {
+    max-width: 300px;
+
+    padding: 10px;
+    background-color: white;
+}
+
+.linkform
+{
+    width: 80%;
+}
+
+#pokemon {
+    width: 90%;
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+

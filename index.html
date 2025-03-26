@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Individuellt projekt - The Dashboard - Gustav SUT24</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+  <header>
+    <div id = "time-date"> <!-- date and time module--> </div>  
+  </header>
+  <main>
+    <input type ="text" id = "headline" placeholder="Enter Headline Here"><!-- customizable page headline --></input>
+    <section id = "modules"> <!-- one article per module -->
+      <article id="link-module"></article>
+      <article id="weather-module"></article>
+      <article id="api-module"></article>
+      <article id="notes-module"></article>
+    </section>
+  </main>
+  <footer>
+    <button class = "change-bg" onClick="getBgPic()"><img src="./IMAGES/refresh.png"/>Randomize Background</button>
+  </footer>
+
+<script src="./keys.js"></script>
+<script src="./JS/script.js"></script>
+</body>
+</html>
